@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
-#include <ReferenceManual.h>
-#include <ColorNumberMatcher.h>
+#include "ReferenceManual.h"
+#include "ColorNumberMatcher.h"
 
 void DisplayColorCoding()
 {
