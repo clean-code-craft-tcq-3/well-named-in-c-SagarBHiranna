@@ -4,8 +4,8 @@
 #include <assert.h>
 
 void testNumberToPair(int pairNumber,
-    enum MajorColor expectedMajor,
-    enum MinorColor expectedMinor)
+    Major_Colour expectedMajor,
+    Minor_Colour expectedMinor)
 {
     ColorPair colorPair = GetColorFromPairNumber(pairNumber);
     char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
@@ -16,8 +16,8 @@ void testNumberToPair(int pairNumber,
 }
 
 void testPairToNumber(
-    enum MajorColor major,
-    enum MinorColor minor,
+    Major_Colour major,
+    Minor_Colour minor,
     int expectedPairNumber)
 {
     ColorPair colorPair;
