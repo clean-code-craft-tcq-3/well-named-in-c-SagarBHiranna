@@ -1,5 +1,7 @@
 #include <ColorNumberMatcher.h>
 #include <testColorToNumberMatcher.h>
+#include <stdio.h>
+#include <assert.h>
 
 int main() {
     testNumberToPair(4, WHITE, BROWN);
