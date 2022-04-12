@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-#include <ColorNumberMatcher.h>
+#include "ColorNumberMatcher.h"
 
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
