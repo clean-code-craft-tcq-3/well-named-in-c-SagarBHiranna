@@ -1,7 +1,7 @@
 #ifndef TESTCOLORPAIR_H
 #define TESTCOLORPAIR_H
 
-#include <ColorNumberMatcher.h>
+#include "ColorNumberMatcher.h"
 
 void testNumberToPair(int pairNumber,
     enum MajorColor expectedMajor,
