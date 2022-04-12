@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include "ReferenceManual.h"
-#include "ColorNumberMatcher.h"
+
 
 void DisplayColorCoding()
 {
@@ -18,7 +18,7 @@ void DisplayColorCoding()
     		char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
     		ColorPairToString(&colorPair, colorPairNames);
 	    	printf("\t %d\t\t  %d\t\t %d\t\t %s\t\n", MajorColorIterator , MinorColorIterator ,PairNumber, colorPairNames);
-	}
+	    }
 
     }
 

@@ -1,8 +1,19 @@
-#include <stdio.h>
-#include <assert.h>
 #include "ColorNumberMatcher.h"
 
+const int MAX_COLORPAIR_NAME_CHARS = 16;
 
+
+const char* MajorColorNames[] = {
+    "White", "Red", "Black", "Yellow", "Violet"
+};
+int numberOfMajorColors =
+    sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
+const char* MinorColorNames[] = {
+    "Blue", "Orange", "Green", "Brown", "Slate"
+};
+
+int numberOfMinorColors =
+    sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
         MajorColorNames[colorPair->majorColor],
@@ -13,9 +24,9 @@ ColorPair GetColorFromPairNumber(int pairNumber) {
     ColorPair colorPair;
     int zeroBasedPairNumber = pairNumber - 1;
     colorPair.majorColor = 
-        (Major_Colour)(zeroBasedPairNumber / numberOfMinorColors);
+        (enum MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
     colorPair.minorColor =
-        (Minor_Colour)(zeroBasedPairNumber % numberOfMinorColors);
+        (enum MinorColor)(zeroBasedPairNumber % numberOfMinorColors);
     return colorPair;
 }
 

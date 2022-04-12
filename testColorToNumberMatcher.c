@@ -1,11 +1,6 @@
-#include "ColorNumberMatcher.h"
 #include "testColorToNumberMatcher.h"
-#include <stdio.h>
-#include <assert.h>
 
-void testNumberToPair(int pairNumber,
-    Major_Colour expectedMajor,
-    Minor_Colour expectedMinor)
+void testNumberToPair(int pairNumber,enum MajorColor expectedMajor,enum MinorColor expectedMinor)
 {
     ColorPair colorPair = GetColorFromPairNumber(pairNumber);
     char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
@@ -15,10 +10,7 @@ void testNumberToPair(int pairNumber,
     assert(colorPair.minorColor == expectedMinor);
 }
 
-void testPairToNumber(
-    Major_Colour major,
-    Minor_Colour minor,
-    int expectedPairNumber)
+void testPairToNumber(enum MajorColor major,enum MinorColor minor,int expectedPairNumber)
 {
     ColorPair colorPair;
     colorPair.majorColor = major;

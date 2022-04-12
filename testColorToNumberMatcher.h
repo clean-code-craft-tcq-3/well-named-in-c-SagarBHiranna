@@ -1,16 +1,11 @@
-#ifndef TESTCOLORPAIR_H
-#define TESTCOLORPAIR_H
+#ifndef TESTCOLORTONUMBERMATCHER_H
+#define TESTCOLORTONUMBERMATCHER_H
 
+#include <stdio.h>
+#include <assert.h>
 #include "ColorNumberMatcher.h"
 
-
-void testNumberToPair(int pairNumber,
-    Major_Colour expectedMajor,
-    Minor_Colour expectedMinor);
-    
-void testPairToNumber(
-    Major_Colour major,
-    Minor_Colour minor,
-    int expectedPairNumber);
+void testNumberToPair( int pairNumber, enum MajorColor expectedMajor, enum MinorColor expectedMinor);
+void testPairToNumber( enum MajorColor major, enum MinorColor minor, int expectedPairNumber);
 
 #endif
