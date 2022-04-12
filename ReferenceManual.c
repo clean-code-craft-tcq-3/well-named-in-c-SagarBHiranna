@@ -11,7 +11,7 @@ void DisplayColorCoding()
     printf("\n*********************************************************************\n");
     for (int MajorColorIterator = 0 ; MajorColorIterator< numberOfMajorColors; MajorColorIterator++)
     {
-	for (int MinorColorIterator = 0 ; MinorColorIterator< numberOfMajorColors; MinorColorIterator++)
+	for (int MinorColorIterator = 0 ; MinorColorIterator< numberOfMinorColors; MinorColorIterator++)
         {	
             ++PairNumber;
  		    ColorPair colorPair = GetColorFromPairNumber(PairNumber);
