@@ -1,4 +1,4 @@
-#include "testColorToNumberMatcher.h"
+#include "testColorNumberMatcher.h"
 
 void testNumberToPair(int pairNumber,enum MajorColor expectedMajor,enum MinorColor expectedMinor)
 {
